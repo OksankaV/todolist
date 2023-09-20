@@ -1,0 +1,138 @@
+:root {
+  --teal-color: #52a3a0;
+  --dark-teal-color: #3e7a78;
+  --dark-grey-color: #334048;
+  --white-color: #f4f4f9;
+}
+body {
+  background: rgb(146, 200, 198);
+  background: linear-gradient(
+    42deg,
+    rgba(146, 200, 198, 1) 0%,
+    rgba(228, 241, 241, 1) 48%,
+    rgba(146, 200, 198, 1) 100%
+  );
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.App {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--dark-teal-color);
+  background-color: var(--white-color);
+  border-radius: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.add-item-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-item-container input {
+  width: 70%;
+  height: 2.5rem;
+  padding: 10px;
+  border: 1px solid var(--teal-color);
+  border-radius: 15px;
+  font-size: 1.3rem;
+  color: var(--dark-grey-color);
+}
+
+.add-button {
+  width: 25%;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  background-color: var(--dark-teal-color);
+  color: var(--white-color);
+  border-width: 0;
+  border-radius: 15px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0px 10px;
+  width: 100%;
+  height: calc(100vh - 200px);
+  overflow: scroll;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  color: var(--dark-teal-color);
+  border-bottom: 1px solid var(--teal-color);
+  border-radius: 10px;
+}
+
+.item-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  width: 25%;
+}
+
+.item-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+  height: 30px;
+  background-color: var(--teal-color);
+  border: 1px solid var(--dark-teal-color);
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.item-row h2 {
+  width: 70%;
+  height: 2rem;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.item {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.item-input {
+  width: 70%;
+  height: 2rem;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  border: 2px solid var(--teal-color);
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: var(--dark-teal-color);
+}
+
+.item-done {
+  text-decoration: line-through;
+  color: darkgray;
+  cursor: pointer;
+}
